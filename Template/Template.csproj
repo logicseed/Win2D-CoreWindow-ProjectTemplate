@@ -58,24 +58,27 @@
     <None Include="Template.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="TemplateFiles\ProjectTemplate.csproj" />
-    <None Include="TemplateFiles\Properties\AssemblyInfo.cs" />
-    <None Include="TemplateFiles\Properties\Default.rd.xml" />
-    <None Include="TemplateFiles\Package.appxmanifest"/>
-    <None Include="TemplateFiles\App.cs" />
-    <None Include="TemplateFiles\View1.cs" />
-    <None Include="TemplateFiles\ViewBase\AbstractView.cs" />
-    <None Include="TemplateFiles\ViewBase\ViewFactory.cs" />
-    <None Include="TemplateFiles\Assets\LockScreenLogo.scale-200.png" />
-    <None Include="TemplateFiles\Assets\SplashScreen.scale-200.png" />
-    <None Include="TemplateFiles\Assets\Square150x150Logo.scale-200.png" />
-    <None Include="TemplateFiles\Assets\Square44x44Logo.scale-200.png" />
-    <None Include="TemplateFiles\Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
-    <None Include="TemplateFiles\Assets\StoreLogo.png" />
-    <None Include="TemplateFiles\Assets\Wide310x150Logo.scale-200.png" />
+    <None Include="ProjectTemplate.csproj" />
+    <None Include="AssemblyInfo.cs" />
+    <None Include="Default.rd.xml" />
+    <None Include="Package.appxmanifest" />
+    <None Include="App.cs" />
+    <None Include="Template_TemporaryKey.pfx" />
+    <None Include="View1.cs" />
+    <None Include="AbstractView.cs" />
+    <None Include="ViewFactory.cs" />
+    <None Include="LockScreenLogo.scale-200.png" />
+    <None Include="SplashScreen.scale-200.png" />
+    <None Include="Square150x150Logo.scale-200.png" />
+    <None Include="Square44x44Logo.scale-200.png" />
+    <None Include="Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <None Include="StoreLogo.png" />
+    <None Include="Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
-    <VSTemplate Include="Template.vstemplate" />
+    <VSTemplate Include="Template.vstemplate">
+      <OutputSubPath>Windows%2520Universal</OutputSubPath>
+    </VSTemplate>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />

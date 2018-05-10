@@ -4,37 +4,34 @@
     <Name>Win2D-CoreWindow App (Universal Windows)</Name>
     <Description>A project for a Universal Windows Platform (UWP) app that is setup to use Win2D through CoreWindow.</Description>
     <Icon>Template.ico</Icon>
-    <ProjectType>CSharp\Windows UAP</ProjectType>
+    <ProjectType>CSharp</ProjectType>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
-    <DefaultName>New Win2D-CoreWindow Project</DefaultName>
+    <DefaultName>Win2DCoreWindowApp</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
+    <TargetPlatformName>Windows</TargetPlatformName>
+    <RequiredPlatformVersion>6.1.0</RequiredPlatformVersion>
   </TemplateData>
-  <TemplateContent>
-    <Project File="TemplateFiles\ProjectTemplate.csproj" ReplaceParameters="true">
-      <ProjectItem ReplaceParameters="true" TargetFileName="App.cs">TemplateFiles\App.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="View1.cs" OpenInEditor="true">TemplateFiles\View1.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="Package.appxmanifest">TemplateFiles\Package.appxmanifest</ProjectItem>
-      <Folder Name="TemplateFiles\Assets" TargetFolderName="Assets">
-        <ProjectItem ReplaceParameters="false" TargetFileName="LockScreenLogo.scale-200.png">LockScreenLogo.scale-200.png</ProjectItem>
-        <ProjectItem ReplaceParameters="false" TargetFileName="SplashScreen.scale-200.png">SplashScreen.scale-200.png</ProjectItem>
-        <ProjectItem ReplaceParameters="false" TargetFileName="Square150x150Logo.scale-200.png">Square150x150Logo.scale-200.png</ProjectItem>
-        <ProjectItem ReplaceParameters="false" TargetFileName="Square44x44Logo.scale-200.png">Square44x44Logo.scale-200.png</ProjectItem>
-        <ProjectItem ReplaceParameters="false" TargetFileName="Square44x44Logo.targetsize-24_altform-unplated.png">Square44x44Logo.targetsize-24_altform-unplated.png</ProjectItem>
-        <ProjectItem ReplaceParameters="false" TargetFileName="StoreLogo.png">StoreLogo.png</ProjectItem>
-        <ProjectItem ReplaceParameters="false" TargetFileName="Wide310x150Logo.scale-200.png">Wide310x150Logo.scale-200.png</ProjectItem>
-      </Folder>
-      <Folder Name="TemplateFiles\Properties" TargetFolderName="Properties">
-        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="false" TargetFileName="Default.rd.xml">Default.rd.xml</ProjectItem>
-      </Folder>
-      <Folder Name="TemplateFiles\ViewBase" TargetFolderName="ViewBase">
-        <ProjectItem ReplaceParameters="true" TargetFileName="AbstractView.cs">AbstractView.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="ViewFactory.cs">ViewFactory.cs</ProjectItem>
-      </Folder>
+  <TemplateContent PreferedSolutionConfiguration="Debug|x86">
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.cs">App.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="View1.cs" OpenInEditor="true">View1.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Package.appxmanifest">Package.appxmanifest</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Assets\LockScreenLogo.scale-200.png">LockScreenLogo.scale-200.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Assets\SplashScreen.scale-200.png">SplashScreen.scale-200.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Assets\Square150x150Logo.scale-200.png">Square150x150Logo.scale-200.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Assets\Square44x44Logo.scale-200.png">Square44x44Logo.scale-200.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">Square44x44Logo.targetsize-24_altform-unplated.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Assets\StoreLogo.png">StoreLogo.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Assets\Wide310x150Logo.scale-200.png">Wide310x150Logo.scale-200.png</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Properties\Default.rd.xml">Default.rd.xml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ViewBase\AbstractView.cs">AbstractView.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ViewBase\ViewFactory.cs">ViewFactory.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="$projectname$_TemporaryKey.pfx">Template_TemporaryKey.pfx</ProjectItem>
     </Project>
   </TemplateContent>
   <WizardExtension>
@@ -46,5 +43,8 @@
       <package id="Microsoft.NETCore.UniversalWindowsPlatform" version="6.1.4" />
       <package id="Win2D.uwp" version="1.22.0" />
     </packages>
+  </WizardData>
+  <WizardData>
+    <UsePackageReferences>true</UsePackageReferences>
   </WizardData>
 </VSTemplate>
