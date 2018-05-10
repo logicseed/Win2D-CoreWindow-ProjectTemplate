@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Template")]
+[assembly: AssemblyTitle("Win2D-CoreWindow Project Template")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Marc King")]
-[assembly: AssemblyProduct("Template")]
+[assembly: AssemblyProduct("Win2D-CoreWindow Project Template")]
 [assembly: AssemblyCopyright("Copyright © Marc King 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
