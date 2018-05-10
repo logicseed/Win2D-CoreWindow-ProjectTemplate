@@ -14,6 +14,8 @@
     <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
     <TargetPlatformName>Windows</TargetPlatformName>
     <RequiredPlatformVersion>6.1.0</RequiredPlatformVersion>
+    <CreateInPlace>true</CreateInPlace>
+    <AppIdFilter>blend</AppIdFilter>
   </TemplateData>
   <TemplateContent PreferedSolutionConfiguration="Debug|x86">
     <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
@@ -31,19 +33,17 @@
       <ProjectItem ReplaceParameters="false" TargetFileName="Properties\Default.rd.xml">Default.rd.xml</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="ViewBase\AbstractView.cs">AbstractView.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="ViewBase\ViewFactory.cs">ViewFactory.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="false" TargetFileName="$projectname$_TemporaryKey.pfx">Template_TemporaryKey.pfx</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="$projectname$_TemporaryKey.pfx" BlendDoNotCreate="true">Template_TemporaryKey.pfx</ProjectItem>
     </Project>
   </TemplateContent>
   <WizardExtension>
-    <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
-    <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+    <Assembly>Microsoft.VisualStudio.WinRT.TemplateWizards, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>Microsoft.VisualStudio.WinRT.TemplateWizards.CreateProjectCertificate.Wizard</FullClassName>
   </WizardExtension>
-  <WizardData>
-    <packages>
-      <package id="Microsoft.NETCore.UniversalWindowsPlatform" version="6.1.4" />
-      <package id="Win2D.uwp" version="1.22.0" />
-    </packages>
-  </WizardData>
+  <WizardExtension>
+    <Assembly>Microsoft.VisualStudio.Universal.TemplateWizards, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>Microsoft.VisualStudio.Universal.TemplateWizards.PlatformVersion.Wizard</FullClassName>
+  </WizardExtension>
   <WizardData>
     <UsePackageReferences>true</UsePackageReferences>
   </WizardData>
