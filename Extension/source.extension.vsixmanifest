@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="Extension.6e6afac3-480c-486c-b4dd-a2cbc584b3b2" Version="1.0" Language="en-US" Publisher="Marc King" />
-    <DisplayName>Extension</DisplayName>
-    <Description>Empty VSIX Project.</Description>
+    <Identity Id="Win2DCoreWindow-ProjectTemplate.6e6afac3-480c-486c-b4dd-a2cbc584b3b2" Version="1.0.0" Language="en-US" Publisher="Marc King" />
+    <DisplayName>Win2DCoreWindow ProjectTemplate</DisplayName>
+    <Description xml:space="preserve">A project for a Universal Windows Platform (UWP) app that is setup to use Win2D through CoreWindow.</Description>
+    <License>Resources\LICENSE.txt</License>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0, 16.0)" />
@@ -11,6 +12,9 @@
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
   </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="Template" d:TargetPath="|Template;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+  </Assets>
   <Prerequisites>
     <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
   </Prerequisites>
